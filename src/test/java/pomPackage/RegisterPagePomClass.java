@@ -34,16 +34,16 @@ public class RegisterPagePomClass
 
 	@FindBy(xpath="//input[@id='FirstName']")WebElement firstName;
 
-	public void clickOnFirstName()
+	public void clickOnFirstName(String fname)
 	{
-		firstName.sendKeys("Amann");
+		firstName.sendKeys(fname);
 	}
 
 	@FindBy(xpath="//input[@id='LastName']")WebElement lastName;
 
-	public void clickOnLastName()
+	public void clickOnLastName(String lname)
 	{
-		lastName.sendKeys("Tekadee");
+		lastName.sendKeys(lname);
 	}
 
 	@FindBy(xpath="//select[@name='DateOfBirthDay']")WebElement day;
@@ -75,23 +75,23 @@ public class RegisterPagePomClass
 
 	@FindBy(xpath="(//input[@type='email'])[1]")WebElement email;
 
-	public void enterEmail()
+	public void enterEmail(String mail)
 	{
-		email.sendKeys("tekade123@gmail.com");
+		email.sendKeys(mail);
 	}
 
 	@FindBy(xpath="//input[@id='Password']")WebElement pass;
 
-	public void enterPassword()
+	public void enterPassword(String password)
 	{
-		pass.sendKeys("aman@1233");
+		pass.sendKeys(password);
 	}
 
 	@FindBy(xpath="//input[@id='ConfirmPassword']")WebElement cpass;
 
-	public void enterConPassword()
+	public void enterConPassword(String cpassword)
 	{
-		cpass.sendKeys("aman@1233");
+		cpass.sendKeys(cpassword);
 	}
   @FindBy(xpath="//button[@id='register-button']")WebElement regbutton;
   
