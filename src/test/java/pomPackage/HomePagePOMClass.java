@@ -39,7 +39,7 @@ public class HomePagePOMClass
 	  addToCart.click();
   }
   
-  @FindBy(xpath="//span[text()='Shopping cart']")WebElement shoppingCart;
+  @FindBy(xpath="//a[@class='ico-cart']")WebElement shoppingCart;
   public void clickOnShoppingCart()
   {
 	  shoppingCart.click();
